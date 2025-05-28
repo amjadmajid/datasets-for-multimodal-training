@@ -1,4 +1,4 @@
-# Datasets for Robotic Multimodal Model Training
+# Datasets and Simulators for Robotic Multimodal Model Training
 
 
 Below is a curated selection of the most-used & recent **robot-centric data sets that power generative-AI research in robotics**.  The table lists each data set’s year, scope and scale, and—crucially—the licence that governs redistribution or commercial use.  This should let you pick a corpus whose terms match your project (e.g., Apache 2.0 or CC-BY for commercial reuse vs. “research-only” agreements).
@@ -29,12 +29,6 @@ Below is a curated selection of the most-used & recent **robot-centric data sets
 
 ---
 
-### Reading the licences
-
-* **Apache 2.0 / MIT** – permissive; redistribution (even commercial) is fine with attribution.
-* **CC-BY 4.0** – also permissive but requires explicit attribution for any reuse, including derivatives.
-* **Custom / research-only** – typically bars commercial use and redistribution without permission; check each EULA carefully.
-
 
 
 [1]: https://robotics-transformer1.github.io/ "RT-1: Robotics Transformer"
@@ -57,15 +51,39 @@ Below is a curated selection of the most-used & recent **robot-centric data sets
 
 
 
-| Name | Task | Scenes | Sensors | Platform | Year |
-| --- | --- | --- | --- | --- | --- |
-| [SDF-Sim](https://arxiv.org/abs/2405.14045) | Action, Navigation | – | RGB | – | 2024 |
-| [TRUMANS](https://arxiv.org/abs/2403.08629) | Action, Navigation | 100 interior scenes (dining room, living room, bedroom, kitchen, etc.) | VICON, RGB-D, IMU | A800 GPU | 2024 |
-| [WonderWorld](https://github.com/KovenYu/WonderWorld)  | Action, Navigation | – | – | A6000 GPU, AR, VR | 2024 |
-| [GenZI](https://craigleili.github.io/projects/genzi/)  | Action, Navigation | – | – | A100 GPU | 2024 |
-| [iGibson2.0](http://svl.stanford.edu/igibson/) | Action, Navigation | 15 complete interactive scenes (108 rooms: kitchen, bathroom, living room, etc.) | RGB, Depth, LiDAR | Intel 5930k CPU, Nvidia GTX 1080 Ti, HTC Vive (Pro Eye), Oculus Rift S, Quest, Fetch robot, Humanoid robot | 2021 |
-| [Habitat-Sim](https://github.com/facebookresearch/habitat-sim)  | Action, Navigation | – | RGB, Depth, GPS, Compass, Contact | Intel Xeon E5-2690 v4 CPU, Nvidia Titan Xp GPU, VR, Robot | 2019 |
-| [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) | all | all | – | – | 2024 |
-| [Matterport3D Simulator](https://github.com/peteanderson80/Matterport3DSimulator)  | Navigation | 90 architectural-scale scenes (homes, offices, churches) | RGB-D, Panoramic | Intel Xeon E5-2690 v4 CPU, Nvidia Titan Xp GPU, Robot | 2017 |
-| [SoundSpaces](https://soundspaces.org/)  | Navigation | 103 scenes, 102 copyright-free sounds | RGB-D, Microphone | – | 2020 |
-| [SoundSpaces v2](https://github.com/facebookresearch/sound-spaces)  | Navigation | – | RGB-D, Microphone | – | 2022 |
+| Name                                                                        | Task                             | Scenes                            | Sensors                           | Platform                                      | Year | License                                                                                          |
+| --------------------------------------------------------------------------- | -------------------------------- | --------------------------------- | --------------------------------- | --------------------------------------------- | ---- | ------------------------------------------------------------------------------------------------ |
+| [SDF-Sim](https://arxiv.org/abs/2405.14045)                                 | Action, Navigation               | –                                 | RGB                               | –                                             | 2024 | TBD – no public repo yet ([NeurIPS][1])                                                          |
+| [TRUMANS](https://arxiv.org/abs/2403.08629)                                 | Action, Navigation               | 100 indoor scenes                 | VICON, RGB-D, IMU                 | A800 GPU                                      | 2024 | [MIT](https://github.com/cornellsml/truman/blob/master/LICENSE) ([GitHub][2])                    |
+| [WonderWorld](https://github.com/KovenYu/WonderWorld)                       | Action, Navigation               | –                                 | –                                 | A6000 GPU, AR/VR                              | 2024 | TBD – code released, licence not yet posted ([GitHub][3])                                        |
+| [GenZI](https://craigleili.github.io/projects/genzi/)                       | Action, Navigation               | –                                 | –                                 | A100 GPU                                      | 2024 | TBD – code announced but unreleased ([craigleili.github.io][4])                                  |
+| [iGibson 2.0](http://svl.stanford.edu/igibson/)                             | Action, Navigation               | 15 interactive scenes (108 rooms) | RGB, Depth, LiDAR                 | GTX 1080 Ti, VR HMDs, Fetch & humanoid robots | 2021 | [MIT](https://github.com/StanfordVL/iGibson/blob/master/LICENSE) ([GitHub][5])                   |
+| [Habitat-Sim](https://github.com/facebookresearch/habitat-sim)              | Action, Navigation               | –                                 | RGB, Depth, GPS, Compass, Contact | Xeon E5-2690 v4, Titan Xp, VR                 | 2019 | [MIT](https://github.com/facebookresearch/habitat-sim/blob/main/LICENSE) ([GitHub][6])           |
+| [Genesis](https://github.com/Genesis-Embodied-AI/Genesis)                   | All                              | All                               | –                                 | –                                             | 2024 | [Apache 2.0](https://github.com/Genesis-Embodied-AI/Genesis/blob/main/LICENSE) ([GitHub][7])     |
+| [Matterport3D Sim](https://github.com/peteanderson80/Matterport3DSimulator) | Navigation                       | 90 building-scale scenes          | RGB-D, Panoramic                  | Xeon E5-2690 v4, Titan Xp, Robot              | 2017 | [MIT](https://github.com/peteanderson80/Matterport3DSimulator/blob/master/LICENSE) ([GitHub][8]) |
+| [SoundSpaces](https://soundspaces.org/)                                     | Navigation                       | 103 scenes, 102 sounds            | RGB-D, Mic                        | –                                             | 2020 | [MIT](https://github.com/facebookresearch/soundspaces-challenge/blob/main/LICENSE) ([GitHub][9]) |
+| [SoundSpaces v2](https://github.com/facebookresearch/sound-spaces)          | Navigation                       | –                                 | RGB-D, Mic                        | –                                             | 2022 | MIT (same repo; archived) ([GitHub][9])                                                          |
+| **AI2-THOR**                                                                | Action, Navigation, Manip.       | 120 synthetic rooms               | RGB, Depth, Semantic              | CPU/GPU + Unity                               | 2017 | [MIT](https://github.com/allenai/ai2thor/blob/main/LICENSE)                                      |
+| **RoboSuite**                                                               | Robotic Manipulation             | 25 simulation tasks               | RGB, Depth                        | GPU (MuJoCo)                                  | 2020 | [Apache 2.0](https://github.com/ARISE-Initiative/robosuite/blob/master/LICENSE)                  |
+| **Gazebo Sim (gz-sim)**                                                     | Manip., Navigation, Multi-robot  | User-defined                      | Any Gazebo sensor                 | CPU/GPU                                       | 2023 | [Apache 2.0](https://github.com/gazebosim/gz-sim/blob/master/LICENSE)                            |
+| **PyBullet**                                                                | Physics, Manip.                  | User-defined                      | OpenGL, Force/Torque, etc.        | CPU/GPU                                       | 2017 | [zlib-libpng](https://github.com/bulletphysics/bullet3/blob/master/LICENSE.txt)                  |
+| **CARLA**                                                                   | Autonomous Driving               | 20+ urban maps                    | RGB, LiDAR, RADAR                 | GPU (UE 4)                                    | 2017 | [MIT](https://github.com/carla-simulator/carla/blob/master/LICENSE)                              |
+| **ThreeDWorld (TDW)**                                                       | Multi-modal physics, Embodied AI | Thousands of objects & layouts    | RGB-D, Audio, Force               | GPU (Unity)                                   | 2021 | [BSD-2-Clause](https://github.com/threedworld-mit/tdw/blob/master/LICENSE.txt)                   |
+| [Isaac Sim](https://developer.nvidia.com/isaac/sim) | Action, Navigation, Manipulation, Synthetic-data generation | Pre-built industrial & household scenes + user-defined USD worlds (SimReady asset library) :contentReference[oaicite:0]{index=0} | RGB, Depth (LiDAR/Radar), IMU, Contact, etc. | NVIDIA RTX-class GPU; Omniverse platform | 2021 (public release) | NVIDIA Omniverse EULA – free for individual dev use, Enterprise licence required for commercial redistribution |
+
+
+[1]: https://neurips.cc/virtual/2024/poster/95252?utm_source=chatgpt.com "Learning rigid-body simulators over implicit shapes for large-scale ..."
+[2]: https://github.com/cornellsml/truman/blob/master/LICENSE?utm_source=chatgpt.com "truman/LICENSE at master · cornellsml/truman - GitHub"
+[3]: https://github.com/KovenYu/WonderWorld "GitHub - KovenYu/WonderWorld: Code release for https://kovenyu.com/WonderWorld/"
+[4]: https://craigleili.github.io/projects/genzi/?utm_source=chatgpt.com "GenZI: Zero-Shot 3D Human-Scene Interaction Generation - Lei Li"
+[5]: https://github.com/StanfordVL/iGibson/blob/master/LICENSE?utm_source=chatgpt.com "MIT license - StanfordVL/iGibson - GitHub"
+[6]: https://github.com/facebookresearch/habitat-sim/blob/main/LICENSE?utm_source=chatgpt.com "habitat-sim/LICENSE at main - GitHub"
+[7]: https://github.com/Genesis-Embodied-AI/Genesis/blob/main/LICENSE?utm_source=chatgpt.com "Genesis/LICENSE at main - GitHub"
+[8]: https://github.com/peteanderson80/Matterport3DSimulator/blob/master/LICENSE "Matterport3DSimulator/LICENSE at master · peteanderson80/Matterport3DSimulator · GitHub"
+[9]: https://github.com/facebookresearch/soundspaces-challenge?utm_source=chatgpt.com "facebookresearch/soundspaces-challenge: Starter code for ... - GitHub"
+
+### Reading the licences
+
+* **Apache 2.0 / MIT** – permissive; redistribution (even commercial) is fine with attribution.
+* **CC-BY 4.0** – also permissive but requires explicit attribution for any reuse, including derivatives.
+* **Custom / research-only** – typically bars commercial use and redistribution without permission; check each EULA carefully.
