@@ -16,6 +16,9 @@ Below is a curated selection of the most-used & recent **robot-centric data sets
 | <a href="https://robopen.github.io/roboset/" target="_blank" rel="noopener noreferrer">RoboSet</a> | 2023 | Household kitchen manipulation | 30 050 trajectories · 38 tasks | <a href="https://github.com/robopen/roboagent/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a> |
 | <a href="https://functional-manipulation-benchmark.github.io/" target="_blank" rel="noopener noreferrer">FMB</a> | 2024 | Functional, long-horizon manipulation | 22 550 expert trajectories | <a href="https://functional-manipulation-benchmark.github.io/" target="_blank" rel="noopener noreferrer">CC-BY 4.0</a> |
 | <a href="https://mobile-aloha.github.io/" target="_blank" rel="noopener noreferrer">Mobile ALOHA</a> | 2024 | Bimanual mobile manipulation | ≈ 50 demos / task (5 + tasks) | <a href="https://github.com/MarkFzp/mobile-aloha/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a> |
+| <a href="https://robotics-transformer-x.github.io/" target="_blank" rel="noopener noreferrer">RT-X / Open X-Embodiment</a> | 2023 | Multi-embodiment, multi-task manipulation | ≈ 1 M+ trajectories · 160 k tasks · 22 robot types | <a href="https://github.com/google-deepmind/open_x_embodiment/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache 2.0</a> |
+| <a href="https://huggingface.co/blog/lerobot-datasets" target="_blank" rel="noopener noreferrer">LeRobot Community</a> | 2025 | Community-contributed multimodal robot data (arms, mobile, driving) | 487 datasets · ≈ 10 M frames | Varied (mostly Apache 2.0) |
+
 
 ## Navigation & embodied-vision data sets
 
