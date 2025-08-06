@@ -1,7 +1,7 @@
 # Datasets and Simulators for Training Robotic Multimodal Models
 
 
-Below is a curated selection of the most-used & recent **robot-centric data sets that power generative-AI research in robotics**.  The table lists each data set’s year, scope and scale, and—crucially—the licence that governs redistribution or commercial use.  This should let you pick a corpus whose terms match your project (e.g., Apache 2.0 or CC-BY for commercial reuse vs. “research-only” agreements).
+Below is a curated selection of the most-used & recent **robot-centric data sets that power generative-AI research in robotics**.  The table lists each data set’s year, scope and scale, and the licence that governs redistribution or commercial use.  This should let you pick a corpus whose terms match your project (e.g., Apache 2.0 or CC-BY for commercial reuse vs. “research-only” agreements).
 
 ## Embodied & manipulation-focused data sets
 
