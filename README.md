@@ -7,6 +7,11 @@ Below is a curated selection of the most-used & recent **robot-centric data sets
 
 | Dataset | Year | Task(s) | Scale | Licence |
 | --- | --- | --- | --- | --- |
+| <a href="https://huggingface.co/datasets/agibot-world/AgiBotWorld-Beta"> AgiBot World Beta </a>   | 2025 | Multi‑robot, multi‑domain manipulation   | \~1.0 M trajectories; 100 robots; 100+ replicated real‑world scenarios       | CC‑BY‑NC‑SA 4.0|
+| <a href="https://tuwien-asl.github.io/REASSEMBLE_page/"> REASSEMBLE </a> | 2025 | Contact‑rich assembly & disassembly (pick/insert/remove/place)  | 4551 demonstrations (4035 successful) collected with event cameras, force‑torque sensors, microphones & multi‑view RGB   | CC‑BY 4.0 |
+| <A href="https://github.com/SiamiLab/RoboMNIST"> RoboMNIST </a> | 2025 | Multi‑robot activity recognition via WiFi, video & audio  | Synchronized data from two Franka Emika arms, three cameras, three WiFi sniffers and three microphones  | CC‑BY 4.0 |
+| <a href="https://arxiv.org/abs/2505.21495"> CLAMP </a> | 2025 | In‑the‑wild haptic perception using low‑cost reacher‑grabber   | 12.3 M datapoints across 5357 household objects captured with seven sensing modalities   | CC‑BY 4.0 |
+| <a href="https://ivl.cs.brown.edu/research/gigahands.html"> GigaHands </a>  | 2025 | Bimanual hand activities (motion synthesis)   | 34 h of recordings from 56 subjects and 417 objects; 14 k clips (183 M frames) and 84 k text annotations | Not yet specified |
 | <a href="https://robotics-transformer1.github.io/" target="_blank" rel="noopener noreferrer">RT-1</a> | 2022 | Multi-task real-world manipulation | ≈ 130 k episodes · 700 tasks | <a href="https://github.com/google-research/robotics_transformer/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache 2.0</a> |
 | <a href="https://droid-dataset.github.io/" target="_blank" rel="noopener noreferrer">DROID</a> | 2024 | In-the-wild manipulation | 76 k trajectories · 564 scenes · 86 tasks | <a href="https://github.com/droid-dataset/droid_policy_learning/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a> |
 | <a href="https://vimalabs.github.io/" target="_blank" rel="noopener noreferrer">VIMA</a> | 2023 | Simulated multimodal manipulation | ≈ 650 k trajectories | <a href="https://huggingface.co/datasets/VIMA/VIMA-Data" target="_blank" rel="noopener noreferrer">CC-BY 4.0</a> |
